@@ -8,6 +8,8 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.sushibytes.databinding.FragmentHomeBinding
+import com.google.android.gms.maps.MapView
+import com.google.android.gms.maps.SupportMapFragment
 
 class HomeFragment : Fragment() {
 
@@ -33,8 +35,11 @@ class HomeFragment : Fragment() {
             textView.text = it
         }
 
+
+
         return root
     }
+
 
     override fun onDestroyView() {
         super.onDestroyView()
