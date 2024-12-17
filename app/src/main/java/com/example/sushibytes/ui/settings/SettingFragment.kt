@@ -37,6 +37,7 @@ class SettingFragment : Fragment() {
             textView.text = it
         }
 
+
         // Creates a listener for the button
         binding.darkMode.setOnClickListener{
             // Checks what the theme is
@@ -62,4 +63,9 @@ class SettingFragment : Fragment() {
         // Returns the light / dark mode state
         return resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK == UI_MODE_NIGHT_YES
     }
+
+//    override fun onSaveInstanceState(outState: Bundle) {
+//        super.onSaveInstanceState(outState)
+//        outState.putBoolean("state", isDarkThemeOn())
+//    }
 }
